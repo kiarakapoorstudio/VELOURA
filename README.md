@@ -1,3 +1,22 @@
+## Important: do not open `index.html` by double-clicking it
+
+`index.html` is the small entry file; the actual website is rendered by React from `src/main.jsx`. Opening the HTML directly (`file://...`) will show a blank page because the app needs Vite to serve its JavaScript modules. Run it locally using the steps below, or deploy it using the included GitHub Actions workflow.
+
+### Run locally
+
+1. Install Node.js 20 or newer from https://nodejs.org/
+2. Open a terminal in this project folder.
+3. Run `npm install`
+4. Run `npm run dev`
+5. Open the local URL printed in the terminal (usually `http://localhost:5173`).
+
+### Deploy on GitHub Pages
+
+1. Upload the project files to a GitHub repository on the `main` branch.
+2. In the repository, open **Settings → Pages** and set the build/deployment source to **GitHub Actions**.
+3. Open the **Actions** tab and wait for **Deploy Veloura to GitHub Pages** to finish successfully.
+4. Open the URL shown in **Settings → Pages**. Routes use hash URLs to work with GitHub Pages.
+
 # VELOURA — Premium Beauty Store Demo
 
 A responsive React + Vite demo storefront for a beauty and cosmetics brand. Includes 24 sample products, category browsing, search and filters, product details, cart, wishlist, demo promo codes, validated demo checkout, order confirmation, simulated account area, and informational pages.
